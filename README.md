@@ -49,4 +49,13 @@ let testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 let comparator = 5
 let replacer = 6
 Expected Output: replacementArray = [1, 2, 3, 4, 6, 6, 7, 8, 9]
+
+Describe: arrayCounter();
+Business
+
+Test! "It should add the number to an array"
+Code: 
+let emptyArray = [];
+emptyArray = arrayCounter(5);
+Expected output: emptyArray = [5]
 ```
