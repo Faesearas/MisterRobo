@@ -37,11 +37,16 @@ Expected Output: true
 
 Test: "It should check to see if the parameter does not exist within an array"
 Code: 
-arrayElementReplacer(comparator, badtestArray);
+arrayElementReplacer(comparator, badTestArray);
 let badTestArray = [1, 2, 3, 4, 5, 7, 8, 9]
 let comparator = 6
 Expected Output: false
 
-
-Test: "It should replace an entry within the array"
+Test: "It should replace an element within the array, if it matches correctly"
+Code:
+replacementArray =  arrayElementReplacer(comparator, replacer, testArray);
+let testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let comparator = 5
+let replacer = 6
+Expected Output: replacementArray = [1, 2, 3, 4, 6, 6, 7, 8, 9]
 ```
