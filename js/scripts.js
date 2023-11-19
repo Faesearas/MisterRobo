@@ -12,13 +12,15 @@ function arrayElementReplacer(comparator, replacer, array) {
 }
 // Business Logic:
 
-function arrayCounter(number){
-    let empArr = [];
-    empArr.push(number);
-    return empArr;
+function arrayCounter(number) {
+        let empArr = [];
+        for (let i = 0; i <= number; i += 1)
+            empArr.push(i);
+        return empArr;
 }
 
 // UI Logic
 
-window.onload =  function() {
+window.onload = function () {
     let errorMessage = "please input a number for me to count to"
+}

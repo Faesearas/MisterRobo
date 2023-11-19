@@ -58,4 +58,10 @@ Code:
 let emptyArray = [];
 emptyArray = arrayCounter(5);
 Expected output: emptyArray = [5]
+
+Test: "It should add all of the numbers, from 0 to the number provided, to the array"
+Code: 
+let emptyArray = [];
+emptyArray = arrayCounter(5);
+Expected output: emptyArray = [0,1,2,3,4,5]
 ```
