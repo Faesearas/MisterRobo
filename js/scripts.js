@@ -1,5 +1,5 @@
 // Utility Logic:
-function arrayElementReplacer(comparator, replacer, array) {
+function arrayElementReplacer1(comparator, replacer, array) {
     newArray = [];
     for (let i = 0; i < array.length; i += 1) {
         if (element === comparator) {
@@ -22,6 +22,15 @@ function arrayCounter(number) {
         return empArr;
     }
 }
+
+function arrayStringifyer(array) {
+    let stringArray = [];    
+    for (let i = 0; i < array.length; i += 1) {
+        stringArray.push(array[i].toString());       
+    };
+    return stringArray;
+}
+
 
 // UI Logic
 

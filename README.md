@@ -26,7 +26,7 @@ $ git clone https://github.com/AmyHruska/MisterRobo.git
 ```js
 
 Describe: arrayElementReplacer();
-Utility
+Under: Utility logic
 
 Test: "It should check to see if the parameter exists within an array"
 Code: 
@@ -51,7 +51,7 @@ let replacer = 6
 Expected Output: replacementArray = [1, 2, 3, 4, 6, 6, 7, 8, 9]
 
 Describe: arrayCounter();
-Business
+Under: Business logic
 
 Test! "It should add the number to an array"
 Code: 
@@ -71,4 +71,14 @@ let emptyArray = [];
 let errorMessage = "NaN, please input a number"
 emptyArray = arrayCounter("kittens");
 Expected output: "NaN, please input a number"
+
+Describe: arrayStringifyer();
+Under: Business logic
+
+Test: "It should accept an array of numbers and turn it into an array of strings"
+Code: 
+let emptyArray = [];
+let testNumberArray = [0,1,2,3];
+emptyArray = arrayStringifyer(testNumberArray);
+Expected output: emptyArray = ['0','1','2','3']
 ```
