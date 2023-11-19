@@ -87,4 +87,6 @@ Code:
 let emptyArray = [];
 let testMixedArray = [1,"kittens!",2,"so cute",3];
 emptyArray = arrayStringifyer(testMixedArray);
+Expected output: emptyArray = ['1','kittens','2','so cute','3'];
+
 ```
