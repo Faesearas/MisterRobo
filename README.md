@@ -64,4 +64,11 @@ Code:
 let emptyArray = [];
 emptyArray = arrayCounter(5);
 Expected output: emptyArray = [0,1,2,3,4,5]
+
+Test: "It should check to see if what is input is a number"
+Code: 
+let emptyArray = [];
+let errorMessage = "NaN, please input a number"
+emptyArray = arrayCounter("kittens");
+Expected output: "NaN, please input a number"
 ```

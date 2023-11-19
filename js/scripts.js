@@ -13,10 +13,14 @@ function arrayElementReplacer(comparator, replacer, array) {
 // Business Logic:
 
 function arrayCounter(number) {
+    if (number != number * 1) {
+        return errorMessage;
+    } else {
         let empArr = [];
         for (let i = 0; i <= number; i += 1)
             empArr.push(i);
         return empArr;
+    }
 }
 
 // UI Logic
