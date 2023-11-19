@@ -81,4 +81,10 @@ let emptyArray = [];
 let testNumberArray = [0,1,2,3];
 emptyArray = arrayStringifyer(testNumberArray);
 Expected output: emptyArray = ['0','1','2','3']
+
+Test: "It should accept any array and turn it into an array of strings"
+Code: 
+let emptyArray = [];
+let testMixedArray = [1,"kittens!",2,"so cute",3];
+emptyArray = arrayStringifyer(testMixedArray);
 ```
