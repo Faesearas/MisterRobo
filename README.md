@@ -77,4 +77,16 @@ let testArray = ["1234","4321"];
 splitArray = arrayStringReplacer(testArray);
 Expected output: splitArray = ['1','2','3','4','4','3','2','1'];
 
+Test: "It should be able to reassemble the arrays before pushing them back into the original array"
+let splitArray = [];
+let testArray = ["1234","4321"];
+splitArray = arrayStringReplacer(testArray);
+Expected output: splitArray = ["1234","4321"]
+
+Test: "It should insert the modifier variable when it incounters the comparator variable inside the array"
+let cuteness = "9"
+let excaimation = "So Cute!"
+let kittenArray = ["9","19","29","39","49","59","1"]
+cutenessOverload = arrayStringReplacer(kittenArray, cuteness, excaimation)
+Expected output: cutenessOverload = ["So Cute!","So Cute!","So Cute!","So Cute!","So Cute!","1"]
 ```
