@@ -18,12 +18,16 @@ function arrayStringifyer(array) {
     return stringArray;
 }
 
-function arrayStringReplacer(array) {
+function arrayStringReplacer(array, comparator, modifier) {
     let splitArray = [];
-    array.forEach(function(element) {
+    array.forEach(function (element) {
         let splitElement = element.split("");
-        let combinedElement = splitElement.join("");
-        splitArray.push(combinedElement)
+        if (splitElement.includes(comparator)) {
+            splitArray.push(modifier);
+        } else {
+            let combinedElement = splitElement.join("");
+            splitArray.push(combinedElement)
+        }
     });
     return splitArray;
 }
@@ -31,5 +35,5 @@ function arrayStringReplacer(array) {
 // UI Logic
 
 window.onload = function () {
-    
+
 }
