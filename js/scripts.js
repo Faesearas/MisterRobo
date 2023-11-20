@@ -30,5 +30,5 @@ function arrayStringReplacer(array) {
 // UI Logic
 
 window.onload = function () {
-    let errorMessage = "please input a number for me to count to"
+    
 }

@@ -64,8 +64,17 @@ Expected output: emptyArray = ['1','kittens','2','so cute','3'];
 function arrayStringReplacer()
 
 Test: "It should take an array of one element and split it into separate elements"
+code:
 let splitArray = [];
 let testArray = ["1234"]
 splitArray = arrayStringReplacer(testArray);
 Expected output: splitArray = ['1','2','3','4'];
+
+Test: "It should take an array with multiple elements and splits them into separate elements"
+code:
+let splitArray = [];
+let testArray = ["1234","4321"];
+splitArray = arrayStringReplacer(testArray);
+Expected output: splitArray = ['1','2','3','4','4','3','2','1'];
+
 ```
