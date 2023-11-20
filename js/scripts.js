@@ -22,7 +22,8 @@ function arrayStringReplacer(array) {
     let splitArray = [];
     array.forEach(function(element) {
         let splitElement = element.split("");
-        splitArray.push(splitElement);
+        let combinedElement = splitElement.join("");
+        splitArray.push(combinedElement)
     });
     return splitArray;
 }
