@@ -1,7 +1,7 @@
 // Business Logic:
 function arrayCounter(number) {
     if (number != number * 1) {
-        return errorMessage;
+        errorMessage();
     } else {
         let empArr = [];
         for (let i = 0; i <= number; i += 1)
@@ -32,8 +32,45 @@ function arrayStringReplacer(array, comparator, modifier) {
     return splitArray;
 }
 
+
+
 // UI Logic
 
-window.onload = function () {
-
+function arrayLister(array, elementID) {
+    let unorderedList = document.createElement("ul")
+    elementID.append(unorderedList);
+    array.forEach(function(element) {
+        let listItem = document.createElement("li")
+        listItem.append(element);
+        unorderedList.append(listItem);
+    });
 }
+
+function errorMessage() {
+    document.getElementById("list").innerText = "Please input a valid Number"
+}
+
+function handleCounter() {
+    event.preventDefault();
+    const userNumber = document.getElementById("counter")
+    const comparatorOne = "1";
+    const comparatorTwo = "2";
+    const comparatorThree = "3";
+    const replacementStringOne = "Beep!";
+    const replacementStringTwo = "Boop!";
+    const replacementStringThree = "Won't you be my neighbor?";
+    document.getElementById("list").innerHTML = "";
+    let numberList = document.getElementById("list");
+    let userArray = arrayCounter(userNumber);
+    let userArrayStringified = arrayStringifyer(userArray);
+    let firstPassArray = arrayStringReplacer(userArrayStringified, comparatorThree, replacementStringThree);
+    let secondPassArray = arrayStringReplacer(firstPassArray, comparatorTwo, replacementStringTwo);
+    let thirdPassArray = arrayStringReplacer(secondPassArray, comparatorOne, replacementStringOne);
+    arrayLister(thirdPassArray, numberList);
+}
+
+
+
+window.addEventListener("load", function() {
+    document.querySelector("form#counter-form").addEventListener("submit", handleCounter);
+  });
