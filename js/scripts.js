@@ -52,7 +52,7 @@ function errorMessage() {
 
 function handleCounter() {
     event.preventDefault();
-    const userNumber = document.getElementById("counter")
+    const userNumber = document.getElementById("counter").value;
     const comparatorOne = "1";
     const comparatorTwo = "2";
     const comparatorThree = "3";
@@ -69,8 +69,6 @@ function handleCounter() {
     arrayLister(thirdPassArray, numberList);
 }
 
-
-
 window.addEventListener("load", function() {
     document.querySelector("form#counter-form").addEventListener("submit", handleCounter);
-  });
+});
