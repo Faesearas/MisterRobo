@@ -24,34 +24,7 @@ $ git clone https://github.com/AmyHruska/MisterRobo.git
 
 ### Test Cases:
 ```js
-
-Describe: arrayElementReplacer();
-Under: Utility logic
-
-Test: "It should check to see if the parameter exists within an array"
-Code: 
-arrayElementReplacer(comparator, testArray);
-let testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-let comparator = 5
-Expected Output: true
-
-Test: "It should check to see if the parameter does not exist within an array"
-Code: 
-arrayElementReplacer(comparator, badTestArray);
-let badTestArray = [1, 2, 3, 4, 5, 7, 8, 9]
-let comparator = 6
-Expected Output: false
-
-Test: "It should replace an element within the array, if it matches correctly"
-Code:
-replacementArray =  arrayElementReplacer(comparator, replacer, testArray);
-let testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-let comparator = 5
-let replacer = 6
-Expected Output: replacementArray = [1, 2, 3, 4, 6, 6, 7, 8, 9]
-
 Describe: arrayCounter();
-Under: Business logic
 
 Test! "It should add the number to an array"
 Code: 
@@ -73,7 +46,6 @@ emptyArray = arrayCounter("kittens");
 Expected output: "NaN, please input a number"
 
 Describe: arrayStringifyer();
-Under: Business logic
 
 Test: "It should accept an array of numbers and turn it into an array of strings"
 Code: 
@@ -89,4 +61,11 @@ let testMixedArray = [1,"kittens!",2,"so cute",3];
 emptyArray = arrayStringifyer(testMixedArray);
 Expected output: emptyArray = ['1','kittens','2','so cute','3'];
 
+function arrayStringReplacer()
+
+Test: "It should take an array of one element and split it into separate elements"
+let splitArray = [];
+let testArray = ["1234"]
+splitArray = arrayStringReplacer(testArray);
+Expected output: splitArray = ['1','2','3','4'];
 ```

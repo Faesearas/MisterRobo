@@ -1,17 +1,4 @@
-// Utility Logic:
-function arrayElementReplacer1(comparator, replacer, array) {
-    newArray = [];
-    for (let i = 0; i < array.length; i += 1) {
-        if (element === comparator) {
-            newArray.push(replacer);
-        } else {
-            newArray.push(element);
-        }
-    };
-    return newArray
-}
 // Business Logic:
-
 function arrayCounter(number) {
     if (number != number * 1) {
         return errorMessage;
@@ -24,13 +11,21 @@ function arrayCounter(number) {
 }
 
 function arrayStringifyer(array) {
-    let stringArray = [];    
+    let stringArray = [];
     for (let i = 0; i < array.length; i += 1) {
-        stringArray.push(array[i].toString());       
+        stringArray.push(array[i].toString());
     };
     return stringArray;
 }
 
+function arrayStringReplacer(array) {
+    let splitArray = [];
+    array.forEach(function(element) {
+        let splitElement = element.split("");
+        splitArray.push(splitElement);
+    });
+    return splitArray;
+}
 
 // UI Logic
 
