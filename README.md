@@ -18,6 +18,7 @@ $ git clone https://github.com/AmyHruska/MisterRobo.git
 * CSS
 ### Known Issues
 * CSS is kind of rough **still**.
+* Negative numbers can be entered but won't be processed.
 * README.md could use [alot](https://knowyourmeme.com/memes/the-alot) attention.
 ### License:
 [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
@@ -41,9 +42,16 @@ Expected output: emptyArray = [0,1,2,3,4,5]
 Test: "It should check to see if what is input is a number"
 Code: 
 let emptyArray = [];
-let errorMessage = "NaN, please input a number"
+let errorMessage = "Please input a positive number"
 emptyArray = arrayCounter("kittens");
-Expected output: "NaN, please input a number"
+Expected output: "Please input a positive number"
+
+Test: "It should not accept a negative number"
+Code:
+let emptyArray = [];
+let errorMessage = "Please input a positive number"
+emptyArray = arrayCounter(-5);
+Expected output: "Please input a positive number"
 
 Describe: arrayStringifyer();
 

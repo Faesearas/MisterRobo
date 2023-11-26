@@ -1,6 +1,6 @@
 // Business Logic:
 function arrayCounter(number) {
-    if (number != number * 1) {
+    if (number != number * 1 || number < 0) {
         errorMessage();
     } else {
         let empArr = [];
@@ -47,7 +47,7 @@ function arrayLister(array, elementID) {
 }
 
 function errorMessage() {
-    document.getElementById("list").innerText = "Please input a valid Number"
+    document.getElementById("list").innerText = "Please input a positive Number"
 }
 
 function handleCounter() {
