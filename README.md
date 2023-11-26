@@ -18,7 +18,6 @@ $ git clone https://github.com/AmyHruska/MisterRobo.git
 * CSS
 ### Known Issues
 * CSS is kind of rough **still**.
-* Negative numbers can be entered but won't be processed.
 * README.md could use [alot](https://knowyourmeme.com/memes/the-alot) attention.
 ### License:
 [MPL 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
