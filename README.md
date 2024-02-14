@@ -1,10 +1,10 @@
 # Mr. Roboger's js "counter"
-#### By: Amy Hruska
-[Mr.R's jsc](https://github.com/AmyHruska/MisterRobo) is a counting mechanism which will count to the given number, sometimes *even* correctly!
+#### By: Amy
+[Mr.R's jsc](https://github.com/faesearas/MisterRobo) is a counting mechanism which will count to the given number, sometimes *even* correctly!
 ### Installation
 #### First method (remotely hosted)
 * Open the web browser of your choice. 
-* Navigate [here](https://amyhruska.github.io/MisterRobo).
+* Navigate [here](https://faesearas.github.io/MisterRobo).
 #### 2nd method (locally hosted <advanced> )
 * Run the below command in the terminal: 
 ````bash
